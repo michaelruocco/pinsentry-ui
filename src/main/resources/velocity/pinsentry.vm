@@ -1,0 +1,33 @@
+<h2>$function</h2>
+
+<form>
+  <div class="form-group">
+    <label for="cardNumber">Card Number</label>
+    <input type="text" class="form-control" id="cardNumber" placeholder="Card Number">
+  </div>
+  <div class="form-group">
+    <label for="sequenceNumber">Sequence Number</label>
+    <input type="text" class="form-control" id="sequenceNumber" placeholder="Sequence Number">
+  </div>
+  <div class="form-group">
+    <label for="transactionCounter">Transaction Counter</label>
+    <input type="text" class="form-control" id="transactionCounter" placeholder="Transaction Counter">
+  </div>
+  #if($isRespond)
+    <div class="form-group">
+      <label for="challengeCode">Challenge Code</label>
+      <input type="text" class="form-control" id="challengeCode" placeholder="Challenge Code">
+    </div>
+  #end
+  #if($isSign)
+    <div class="form-group">
+      <label for="accountNumber">Account Number</label>
+      <input type="text" class="form-control" id="accountNumber" placeholder="Account Number">
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="text" class="form-control" id="amount" placeholder="Amount">
+    </div>
+  #end
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

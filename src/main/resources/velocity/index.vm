@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" data-framework="intercoolerjs">
+<head>
+    #parse("/velocity/header.vm")
+</head>
+<body>
+    #parse("/velocity/nav.vm")
+    <div class="container">
+        <section id="todoapp" ic-target="this">
+            #parse("/velocity/pinsentry.vm")
+        </section>
+    </div>
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/vendor/intercooler-0.9.6.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
